@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> بقعة ضوء</title>
+    </head>
+
+    <body>
+        <div id="main">
+            
+            <div id="nav">
+
+                <h1><i>بقعة ضوء</i></h1>
+
+                <ul>
+                    <li> <a href="p1.html">الرّئيسيّة</a> </li>
+                    <li> <a href="p2.html">القضايا</a></li>
+                    <li> <a href="p3.html"> تواصل معنا</a></li>
+                </ul>
+
+            </div>
+            <hr/>
+
+            <div id="main2">
+                <div id="title">
+
+                    <h3>هل تحتاج مساعدة؟</h3>
+
+                </div>
+                <div id="phf">
+                <div id="photo">
+                    <img src="img/بنات.jpg"/>
+                </div>
+
+                <div id="form">
+                    <form>
+                        <label id="name">الاسم:</label>
+                        <label id="email">البريد الإلكتروني:</label>
+                        <br/>
+                        <input id="text" type="text">
+                        <input  id="ema" type="email"><br/><br/>
+                      
+                        <div id="mm">
+                        <label id="age">العمر:</label>
+                        <select id="framwork">
+                            <option value="13-18"> 13-18 </option>
+                            <option value="18-30"> 18-30 </option>
+                            <option value="30-45"> 30-45</option>
+                            <option value="45-60"> 45-60 </option>
+                            <option value="older">أكبر </option>
+                        </select>
+                        </div>
+                        <br/>
+                        <label id="gender">الجنس:</label><br/>
+                        <input type="radio" name="gender">
+                        <label id="female"> أنثى.</label><br/>
+                        <input type="radio" name="gender">
+                        <label id="male"> ذكر.</label><br/>
+
+                        <textarea>
+                            اكتب ما تمرّ به ...
+                        </textarea><br/>
+                       
+                        <br/>
+                    
+                        <input id="btn" type="submit" value="ارسال" onclick="submitfunction()">
+                    </form>
+                </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div id="footer">
+                <p><b>بقعة ضوء</b>
+                    <br/><br/>
+                    <i>STEMinist Girls : طُوِّر من قبل</i>
+                </p>
+
+                <a href="https://www.facebook.com/events/2105979732910945"> facebook</a>
+            </div>
+        </div>
+        <!--javascript-->
+<script>
+
+   
+    function submitfunction(){
+        var yourname=document.getElementById('text').value;
+        var Youemairl=document.getElementById('ema').value;
+        var Age=document.getElementById('framwork').value;
+        alert("Name:\n" + yourname +"Email:\n" +Youemairl +"Age: "+Age);
+    }
+    
+
+    
+</script>
+    </body>
+</html>
+
